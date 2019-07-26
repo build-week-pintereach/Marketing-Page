@@ -164,14 +164,13 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   background-color: #3b3b3b;
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   align-items: center;
   background-color: #fcd3ff;
@@ -187,12 +186,32 @@ header a {
   font-size: 2rem;
   padding-right: 2rem;
 }
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+  header h2 {
+    padding-top: 1rem;
+  }
+  header nav {
+    padding-bottom: 1rem;
+  }
+}
 .aboutbody {
   display: flex;
   justify-content: space-around;
   margin: 15% 0;
 }
+@media (max-width: 800px) {
+  .aboutbody {
+    display: inline;
+  }
+  .aboutbody .box {
+    margin: 4rem 3rem;
+  }
+}
 footer {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -224,6 +243,8 @@ footer p {
   text-align: center;
   padding: 2rem;
   color: #9f1de0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .bottom h2 {
   padding-top: 10rem;
@@ -273,17 +294,4 @@ footer p {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-}
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
 }
