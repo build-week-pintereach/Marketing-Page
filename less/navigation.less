@@ -1,14 +1,21 @@
 .topnav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: black;
     
     h1 {
-        font-size: 5rem;
+        font-size: 7rem;
+        color: @deep-purple;
+        margin-left: 15px;
     }
 
     nav {
         display: flex;
         justify-content: space-between;
+        margin-right: 15px;
         
         a {
             font-size: 2.8rem;
@@ -16,8 +23,13 @@
             margin: 10px;
             text-decoration: none;
             text-transform: uppercase;
-            color: @pearl;
-            background-color: @lightpurple;
-        }
+            color: @deep-purple;
+            background-color: @pearl;
+
+            &:hover {
+                background-color: rgb(59, 59, 59);
+                color: @pearl;
+            }
+        } 
     }
 }
