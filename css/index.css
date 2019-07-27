@@ -146,7 +146,7 @@ html {
 body {
   width: 72%;
   margin: 0 auto;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/books.jpg");
 }
 .topnav {
   display: flex;
@@ -237,10 +237,15 @@ body {
   color: #d11aff;
 }
 .boxes .box-header {
-  width: 70%;
+  width: 65%;
   margin: 25px 0;
   color: #fcd3ff;
 }
 .boxes .box-header h2 {
   font-size: 3.5rem;
+}
+.boxes .box-header p {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  color: #8d17a5;
 }
