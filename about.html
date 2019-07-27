@@ -6,6 +6,7 @@
   <title>Pintereach</title>
 
   <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/aboutpage.css" rel="stylesheet" />
 
 </head>
@@ -13,11 +14,14 @@
 <body class="container">
 <header class="about">
   <h2>About The Developers</h2>
-  <nav>
+  <nav class='topnav' id='myTopnav'>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="#">Sign-In</a>
     <a href="#signup">Sign up</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
   </nav>
 </header>
 
@@ -35,8 +39,8 @@
           <img src="images/Tim.jpg" alt="picture of tim" />
         </div>
         <div>
-          <p>Hi, my name is Tim</p>
-          <p>Find me at</p>
+          <p>Timothy Shores</p>
+          <p>Find me at:</p>
           <ul class="social">
             <li>
               <a href="https://twitter.com/"><span>Twitter</span></a>
@@ -69,8 +73,8 @@
           <img src="images/linkin-photo.jpg" alt="picture of tim" />
         </div>
         <div>
-          <p>Hi, my name is Tim</p>
-          <p>Find me at</p>
+          <p>Michael Williams</p>
+          <p>Find me at:</p>
           <ul class="social">
             <li>
               <a href="https://twitter.com/"><span>Twitter</span></a>
@@ -103,8 +107,8 @@
           <img src="images/ken.png" alt="picture of tim" />
         </div>
         <div>
-          <p>Hi, my name is Tim</p>
-          <p>Find me at</p>
+          <p>Ken Boelter</p>
+          <p>Find me at:</p>
           <ul class="social">
             <li>
               <a href="https://twitter.com/"><span>Twitter</span></a>
@@ -138,16 +142,16 @@
         </div>
         <div>
           <p>Hi, my name is Jacob</p>
-          <p>Find me at</p>
+          <p>Find me at:</p>
           <ul class="social">
             <li>
-              <a href="https://twitter.com/"><span>Twitter</span></a>
+              <a href="https://twitter.com/hamofmoose">twitter</a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/jacob-williams-a8b05b188/"><span>LinkedIn</span></a>
             </li>
             <li>
-              <a href="https://github.com/JacobWilliams90"><span>Github</span></a>
+              <a href="https://github.com/JacobWilliams90"><span>github</span></a>
             </li>
           </ul>
         </div>
@@ -165,10 +169,11 @@
         <input type='text' name='subject'placeholder="Subject"><br>
       </div>
       <div class='message'>
-        <textarea name='message'placeholder="Message"></textarea><br>
+        <textarea name='message'placeholder="Type Your Message here!"></textarea><br>
       </div>
       <div class='bttns'>
-        
+          <input type="submit" value="Send Message">
+          <input type="reset" value="Clear Form" class="alt">
       </div>
       </form>
   </div>
