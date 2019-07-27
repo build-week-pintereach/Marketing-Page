@@ -318,7 +318,6 @@ footer p {
   background-repeat: no-repeat;
   background-position: center;
 }
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -332,7 +331,6 @@ footer p {
   background-color: #000000;
   background-color: rgba(0, 0, 0, 0.4);
 }
-/* Modal Content */
 .modal-content {
   background-color: grey;
   margin: auto;
@@ -372,7 +370,7 @@ input {
   border: none;
   background: #282828;
   border-radius: 8px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.85em;
   color: #888;
   font-weight: 300;

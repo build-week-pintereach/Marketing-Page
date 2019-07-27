@@ -7,9 +7,9 @@ header {
   height: 15rem;
 
   h2 {
-        font-size: 4rem;
-        color: @main-purple;
-        text-shadow: 3px 3px 3px black;
+    font-size: 4rem;
+    color: @main-purple;
+    text-shadow: 3px 3px 3px black;
   }
 
   a {
@@ -22,64 +22,61 @@ header {
     color: @deep-purple;
     padding: 0 1.5rem;
 
-        &:hover {
-            background-color: rgb(59, 59, 59);
-            color: @pearl;
-        }
+    &:hover {
+      background-color: rgb(59, 59, 59);
+      color: @pearl;
+    }
   }
 
   a.icon {
-      display: none;
+    display: none;
   }
 
-  @media @tablet{
-      flex-direction: column;
-      padding-top: 1rem;
-      justify-content: center;
+  @media @tablet {
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: center;
 
-      a{
-          font-size: 1.5rem;
-      }
+    a {
+      font-size: 1.5rem;
+    }
   }
 
   @media @mobile {
-
-        h2 {
-            font-size: 3.2rem;
-            padding-top: 0.5rem;
-        }
-
-        a{
-            margin-right: 0;
-        }
-
-        .topnav a {
-            display: none;
-            padding: 1rem;
-        
-        }
-        .topnav a.icon {
-            float: right;
-            display: block;
-            padding: 1.5rem;
-            background-color: #343434;
-          }
-
-        .topnav.responsive {
-            position: relative;
-        }
-
-        .topnav.responsive .icon {
-        right: 0;
-        top: 0;
-        }
-        
-        .topnav.responsive a {
-        float: none;
-        display: block;
-        }
-
+    h2 {
+      font-size: 3.2rem;
+      padding-top: 0.5rem;
     }
+
+    a {
+      margin-right: 0;
+    }
+
+    .topnav a {
+      display: none;
+      padding: 1rem;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+      padding: 1.5rem;
+      background-color: #343434;
+    }
+
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive .icon {
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+  }
 }
 
 .aboutbody {
@@ -88,9 +85,9 @@ header {
   margin: 15% 0;
 
   @media @tablet {
-      flex-direction: row;
-        flex-wrap: wrap;
-    }
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 footer {
@@ -171,7 +168,6 @@ footer {
   background-position: center;
 }
 
-/* The Modal (background) */
 .modal {
   display: none;
   position: fixed;
@@ -186,102 +182,97 @@ footer {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Modal Content */
-    .modal-content {
-        background-color: grey;
-        margin: auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 70%;
-        color: black;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+.modal-content {
+  background-color: grey;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-        img {
-            padding: 2rem;
-            max-height: 50rem;
-        }
+  img {
+    padding: 2rem;
+    max-height: 50rem;
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  div {
+    padding: 1.2rem;
+  }
+}
+
+input {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  background: #282828;
+  border-radius: 8px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.85em;
+  color: #888;
+  font-weight: 300;
+  font-size: 13pt;
+  width: 100%;
+}
+
+textarea {
+  height: 15rem;
+  border: none;
+  background: #282828;
+  border-radius: 8px;
+  width: 100%;
+  color: #888;
+}
+
+.bttns {
+  margin: 0 auto;
+  width: 40%;
+  padding: 2rem;
+  display: flex;
+
+  @media @tablet {
+    display: flex;
+  }
+
+  @media @mobile {
+    margin: 0;
+    width: 100%;
+  }
+
+  input {
+    display: flex;
+    background-color: @main-purple;
+    color: @pearl;
+
+    @media @tablet {
+      font-size: 1rem;
+      font-weight: bold;
+      border: 1px solid @pearl;
     }
+  }
 
-    .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    align-self: flex-start;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    form{
-
-        div{
-            padding: 1.2rem;
-        }
-    }
-
-    input{
-        display: flex;
-        margin: 0 auto;
-        align-items: center;
-        padding: 1rem;
-        border: none;
-        background: #282828;
-        border-radius: 8px;
-        font-family: 'Open Sans', sans-serif;
-        line-height: 1.85em;
-        color: #888;
-        font-weight: 300;
-        font-size: 13pt;
-        width: 100%;
-    }
-
-    textarea{
-        height: 15rem;
-        border: none;
-        background: #282828;
-        border-radius: 8px;
-        width: 100%;
-        color: #888;
-    }
-
-    .bttns{
-        margin: 0 auto;
-        width: 40%;
-        padding: 2rem;
-        display: flex;
-
-
-
-        @media @tablet {
-            display: flex; 
-        }
-
-        @media @mobile{
-            margin: 0;
-            width: 100%;
-        }
-
-        input{
-            display:flex;
-            background-color: @main-purple;
-            color: @pearl;
-
-
-            @media @tablet {
-                font-size: 1rem;
-                font-weight: bold;
-                border: 1px solid @pearl;
-            }
-        }
-
-        input:last-child{
-            margin-left: 1rem;
-        }
-    }
+  input:last-child {
+    margin-left: 1rem;
+  }
+}
