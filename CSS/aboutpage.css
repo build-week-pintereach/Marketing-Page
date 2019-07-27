@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: black;
 }
 html,
 body {
@@ -164,33 +165,49 @@ img {
   height: auto;
 }
 .container {
-  width: 100%;
+  width: 72%;
   margin: 0 auto;
-  background-color: #3b3b3b;
+  background-color: #343434;
 }
 header {
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #fcd3ff;
-  height: 9rem;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, black, #d11aff);
 }
 header h2 {
-  padding-left: 2%;
+  font-size: 5rem;
+  color: #d11aff;
+  margin-left: 15px;
+  text-shadow: 3px 3px 3px black;
 }
 header nav {
-  padding-right: 1%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
 }
-header a {
-  font-size: 2rem;
-  padding-right: 2rem;
+header nav a {
+  font-size: 2.8rem;
+  padding: 15px 40px;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8d17a5;
+  background-color: #f2f2f2;
+  box-shadow: 3px 3px 3px black;
 }
-@media (max-width: 500px) {
+header nav a:hover {
+  background-color: #3b3b3b;
+  color: #f2f2f2;
+}
+@media (max-width: 400px) {
   header {
     flex-direction: column;
   }
-  header h2 {
+  header h3 {
+    font-size: 4rem;
     padding-top: 1rem;
   }
   header nav {
@@ -215,8 +232,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fcd3ff;
-  height: 9rem;
+  background: linear-gradient(to top, black, #d11aff);
+  height: 12rem;
+  color: #8d17a5;
+  text-shadow: 2px 2px 2px black;
 }
 footer p {
   font-size: 2.5rem;
@@ -226,7 +245,7 @@ footer p {
   height: 200px;
   background: #f2f2f2;
   border-radius: 30px;
-  box-shadow: 15px 15px 0 #d11aff;
+  box-shadow: 15px 15px 0 grey;
   margin: 40px 0;
   line-height: 100%;
   color: #f2f2f2;
@@ -242,33 +261,36 @@ footer p {
 .bottom {
   text-align: center;
   padding: 2rem;
-  color: #9f1de0;
+  color: white;
   max-width: 1000px;
   margin: 0 auto;
 }
 .bottom h2 {
-  padding-top: 10rem;
+  padding-top: 5rem;
+  text-shadow: 1px 1px #9f1de0;
+  color: #fcd3ff;
 }
 #tim {
-  background-image: url("\\img/tim.jpg");
+  background-image: url("../images/tim.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #michael {
-  background-image: url("\\img/linkin-photo.jpg");
+  background-image: url("../images/linkin-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 #ken {
-  background-image: url("\\img/ken.png");
+  background-image: url("../images/ken.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  box-shadow: 15px 15px 0 grey;
 }
 #jacob {
-  background-image: url("");
+  background-image: url("../images/jacob.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -289,9 +311,54 @@ footer p {
 }
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: grey;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 70%;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.modal-content img {
+  padding: 2rem;
+  max-height: 50rem;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  align-self: flex-start;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+form div {
+  padding: 1.2rem;
+}
+input {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 1rem;
+  border: none;
+  background: #282828;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.85em;
+  color: #888;
+  font-weight: 300;
+  font-size: 13pt;
+}
+textarea {
+  height: 15rem;
+  border: none;
+  background: #282828;
+  border-radius: 8px;
+  width: 50%;
 }
