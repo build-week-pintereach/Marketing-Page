@@ -1,13 +1,21 @@
+.background {
+    background-color: rgb(59, 59, 59);
+    height: 2000px;
+    width: 100%;
+}
+
 .opener {
     display: flex;
     align-content: center;
     justify-content: space-around;
     flex-direction: column;
     text-align: center;
-    background-color: rgb(59, 59, 59);
+    background-color: gray;
     height: 150px;
     width: 90%;
     margin: 50px auto;
+    box-shadow: 3px 3px 3px @deep-purple;
+
 
     section {
 
@@ -15,27 +23,45 @@
             font-size: 6rem;
             font-family: @main-font;
             color: @pearl;
+            text-shadow: 3px 3px 3px black;
         }
     
         p {
             font-size: 2rem;
-            color: @main-purple;
+            color: @lightpurple;
+
+            a {
+                text-decoration: none;
+                color: @deep-purple;
+            }
         }
     }
 }
 
 .boxes {
     display: flex;
-    justify-content: space-around;
-}
+    justify-content: space-between;
 
-.example {
-    .box;
+    .example {
+        .box;
+        margin: 0 100px;
+    
+        p {
+            font-size: 7rem;
+            text-align: right;
+            padding: 5px;
+            color: @main-purple;
+        }
+    }
 
-    p {
-        font-size: 7rem;
-        text-align: right;
-        padding: 5px;
-        color: @main-purple;
+    .box-header {
+        width: 70%;
+        margin: 25px 0;
+        color: @lightpurple;
+        
+        h2 {
+            font-size: 3.5rem;
+            
+        }
     }
 }

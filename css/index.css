@@ -4,6 +4,12 @@
   background: #f2f2f2;
   border-radius: 30px;
   box-shadow: 15px 15px 0 #d11aff;
+  transition: 0.5s;
+}
+.box:hover {
+  width: 220px;
+  height: 220px;
+  transform: rotate(-5deg);
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -140,7 +146,7 @@ html {
 body {
   width: 72%;
   margin: 0 auto;
-  background: gray;
+  background-image: url("../images/background.jpg");
 }
 .topnav {
   display: flex;
@@ -148,12 +154,13 @@ body {
   align-items: center;
   width: 100%;
   height: 150px;
-  background-color: black;
+  background: linear-gradient(black, #d11aff);
 }
 .topnav h1 {
   font-size: 7rem;
-  color: #8d17a5;
+  color: #fcd3ff;
   margin-left: 15px;
+  text-shadow: 3px 3px 3px black;
 }
 .topnav nav {
   display: flex;
@@ -168,10 +175,16 @@ body {
   text-transform: uppercase;
   color: #8d17a5;
   background-color: #f2f2f2;
+  box-shadow: 3px 3px 3px black;
 }
 .topnav nav a:hover {
   background-color: #3b3b3b;
   color: #f2f2f2;
+}
+.background {
+  background-color: #3b3b3b;
+  height: 2000px;
+  width: 100%;
 }
 .opener {
   display: flex;
@@ -179,34 +192,55 @@ body {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
-  background-color: #3b3b3b;
+  background-color: gray;
   height: 150px;
   width: 90%;
   margin: 50px auto;
+  box-shadow: 3px 3px 3px #8d17a5;
 }
 .opener section h1 {
   font-size: 6rem;
   font-family: 'Kanit', sans-serif;
   color: #f2f2f2;
+  text-shadow: 3px 3px 3px black;
 }
 .opener section p {
   font-size: 2rem;
-  color: #d11aff;
+  color: #fcd3ff;
+}
+.opener section p a {
+  text-decoration: none;
+  color: #8d17a5;
 }
 .boxes {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.example {
+.boxes .example {
   width: 200px;
   height: 200px;
   background: #f2f2f2;
   border-radius: 30px;
   box-shadow: 15px 15px 0 #d11aff;
+  transition: 0.5s;
+  margin: 0 100px;
 }
-.example p {
+.boxes .example:hover {
+  width: 220px;
+  height: 220px;
+  transform: rotate(-5deg);
+}
+.boxes .example p {
   font-size: 7rem;
   text-align: right;
   padding: 5px;
   color: #d11aff;
+}
+.boxes .box-header {
+  width: 70%;
+  margin: 25px 0;
+  color: #fcd3ff;
+}
+.boxes .box-header h2 {
+  font-size: 3.5rem;
 }
