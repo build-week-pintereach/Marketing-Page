@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pintereach</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="css/aboutpage.css" rel="stylesheet" />
+  </head>
+
+  <body class="container">
+    <header class="about">
+      <h2>About The Developers</h2>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Sign-In</a>
+        <a href="#signup">Sign up</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </nav>
+    </header>
+
+    <div class="bottom">
+      <h2>Click Each of us for more information!</h2>
+      <div class="aboutbody">
+        <button class="box" id="tim">
+          <h4>Team lead</h4>
+          <p>Timothy Shores</p>
+        </button>
+
+        <div id="myModal1" class="modal">
+          <div class="modal-content">
+            <div>
+              <img src="images/Tim.jpg" alt="picture of tim" />
+            </div>
+            <div class='social'>
+              <h2>Timothy Shores</h2>
+              <p>Find me at:</p>
+              <a href="https://twitter.com/timothymshores"><img src='images\Twitter_Logo_Blue-150x150.png'width=140px/></a>
+              <a href="https://www.linkedin.com/in/timothyshores/"><img src='images\In-2C-54px-R.png' width=140px/></a>
+              <a href="https://github.com/timothyshores"><img src='images\GitHub-Mark-120px-plus.png' width=130px/></a>
+            </div>
+            <span class="close">&times;</span>
+          </div>
+        </div>
+
+        <button class="box" id="michael">
+          <h4>Front end Developer</h4>
+          <p>Michael Williams</p>
+        </button>
+
+        <div id="myModal2" class="modal">
+          <div class="modal-content">
+            <div>
+              <img src="images/linkin-photo.jpg" alt="picture of tim" />
+            </div>
+            <div>
+              <h2>Michael Williams</h2>
+              <p>Find me at:</p>
+              <!-- <a href="https://twitter.com/"><img src='images\Twitter_Logo_Blue-150x150.png' width=140px/></a> -->
+              <a href="https://www.linkedin.com/in/michael-williams-79897625/"><img src='images\In-2C-54px-R.png' width=140px/></a>
+              <a href="https://github.com/mikeyjwilliams"><img src='images\GitHub-Mark-120px-plus.png' width=130px/></a>
+            </div>
+            <span class="close">&times;</span>
+          </div>
+        </div>
+
+        <button class="box" id="ken">
+          <h4>UI Developer</h4>
+          <p>Ken Boelter</p>
+        </button>
+
+        <div id="myModal3" class="modal">
+          <div class="modal-content">
+            <div>
+              <img src="images/ken.png" alt="picture of tim" />
+            </div>
+            <div>
+              <h2>Ken Boelter</h2>
+              <p>Find me at:</p>
+              <div>
+                  <a href="https://twitter.com/577_208"><img src='images\Twitter_Logo_Blue-150x150.png'width=140px/></a>
+                  <a href="https://www.linkedin.com/in/timothyshores/"><img src='images\In-2C-54px-R.png' width=140px/></a>
+                  <a href="https://github.com/krboelter"><img src='images\GitHub-Mark-120px-plus.png' width=130px/></a>
+              </div>
+            </div>
+            <span class="close">&times;</span>
+          </div>
+        </div>
+
+        <button class="box" id="jacob">
+          <h4>UI Developer</h4>
+          <p>Jacob Williams</p>
+        </button>
+
+        <div id="myModal4" class="modal">
+          <div class="modal-content">
+            <div>
+              <img src="images/jacob.jpg" alt="picture of jacob" />
+            </div>
+            <div>
+              <h2>Jacob Williams</h2>
+              <p>Find me at:</p>
+              <div>
+                <a href="https://twitter.com/HamOfMoose"><img src='images\Twitter_Logo_Blue-150x150.png'width=140px/></a>
+                <a href="https://www.linkedin.com/in/jacob-williams-a8b05b188/"><img src='images\In-2C-54px-R.png' width=140px/></a>
+                <a href="https://github.com/JacobWilliams90"><img src='images\GitHub-Mark-120px-plus.png' width=130px/></a>
+              </div>
+            </div>
+            <span class="close">&times;</span>
+          </div>
+        </div>
+      </div>
+      <h2>Contact Us!</h2>
+      <div class="form">
+        <form>
+          <div><input type="text" name="name" placeholder="Name" /><br /></div>
+          <div>
+            <input type="text" name="subject" placeholder="Subject" /><br />
+          </div>
+          <div class="message">
+            <textarea
+              name="message"
+              placeholder="Type Your Message here!"
+            ></textarea
+            ><br />
+          </div>
+          <div class="bttns">
+            <input type="submit" value="Send Message" />
+            <input type="reset" value="Clear Form" class="alt" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; Pintereach</p>
+    </footer>
+
+    <script src="JS/about.js"></script>
+  </body>
+</html>
