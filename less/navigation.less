@@ -1,0 +1,39 @@
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(black, @main-purple);
+    position: sticky;
+    top: 0;
+    
+    h1 {
+        font-size: 7rem;
+        color: @lightpurple;
+        margin-left: 15px;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 15px;
+        
+        a {
+            font-size: 2.8rem;
+            padding: 15px 40px;
+            margin: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: @deep-purple;
+            background-color: @pearl;
+            box-shadow: 3px 3px 3px black;
+
+            &:hover {
+                background-color: rgb(59, 59, 59);
+                color: @pearl;
+            }
+        } 
+    }
+}
