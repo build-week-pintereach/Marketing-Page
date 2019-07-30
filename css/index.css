@@ -161,7 +161,7 @@ html {
 body {
   width: 72%;
   margin: 0 auto;
-  background-color: black;
+  background-color: #f2f2f2;
 }
 .topnav {
   display: flex;
@@ -260,7 +260,8 @@ body {
 .inline .boxes {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 50px;
+  height: 300px;
 }
 .inline .boxes .example {
   width: 200px;
@@ -292,6 +293,21 @@ body {
   color: #fcd3ff;
 }
 .inline .boxes .box-header p {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  color: #f2f2f2;
+}
+.inline .audience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: left;
+}
+.inline .audience h2 {
+  font-size: 3.5rem;
+  color: #fcd3ff;
+}
+.inline .audience p {
   font-size: 1.8rem;
   margin-top: 25px;
   color: #f2f2f2;
