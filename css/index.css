@@ -11,6 +11,21 @@
   height: 220px;
   transform: rotate(-5deg);
 }
+.header {
+  font-size: 3.5rem;
+  color: #fcd3ff;
+}
+.paragraph {
+  font-size: 1.8rem;
+  margin-top: 25px;
+  color: #f2f2f2;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -214,40 +229,69 @@ body {
   text-decoration: none;
   color: #8d17a5;
 }
-.boxes {
+.inline {
+  width: 80%;
+  margin: 0 auto;
+}
+.inline .introduction {
+  display: flex;
+  justify-content: space-between;
+}
+.inline .introduction div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.inline .introduction div h2 {
+  font-size: 3.5rem;
+  color: #fcd3ff;
+}
+.inline .introduction div p {
+  width: 75%;
+  font-size: 1.8rem;
+  margin-top: 25px;
+  color: #f2f2f2;
+}
+.inline .introduction img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px black;
+}
+.inline .boxes {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
 }
-.boxes .example {
+.inline .boxes .example {
   width: 200px;
   height: 200px;
   background: #f2f2f2;
   border-radius: 30px;
   box-shadow: 15px 15px 0 #d11aff;
   transition: 0.5s;
-  margin: 0 100px;
 }
-.boxes .example:hover {
+.inline .boxes .example:hover {
   width: 220px;
   height: 220px;
   transform: rotate(-5deg);
 }
-.boxes .example p {
+.inline .boxes .example p {
   font-size: 7rem;
   text-align: right;
   padding: 5px;
   color: #d11aff;
 }
-.boxes .box-header {
-  width: 65%;
-  margin: 25px 5px;
+.inline .boxes .box-header {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 }
-.boxes .box-header h2 {
+.inline .boxes .box-header h2 {
   font-size: 3.5rem;
   color: #fcd3ff;
 }
-.boxes .box-header p {
+.inline .boxes .box-header p {
   font-size: 1.8rem;
   margin-top: 25px;
   color: #f2f2f2;
