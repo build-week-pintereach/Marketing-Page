@@ -1,5 +1,5 @@
 .background {
-    background-color: rgb(59, 59, 59);
+    background-color: @main-gray;
     height: 2000px;
     width: 100%;
 }
@@ -41,6 +41,7 @@
 .boxes {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 
     .example {
         .box;
@@ -56,17 +57,18 @@
 
     .box-header {
         width: 65%;
-        margin: 25px 0;
-        color: @lightpurple;
+        margin: 25px 5px;
         
         h2 {
             font-size: 3.5rem;
+            color: @lightpurple;
+
         }
 
         p {
             font-size: 1.8rem;
             margin-top: 25px;
-            color: @deep-purple;
+            color: @pearl;
         }
     }
 }

@@ -146,7 +146,7 @@ html {
 body {
   width: 72%;
   margin: 0 auto;
-  background-image: url("../images/books.jpg");
+  background-color: black;
 }
 .topnav {
   display: flex;
@@ -155,6 +155,8 @@ body {
   width: 100%;
   height: 150px;
   background: linear-gradient(black, #d11aff);
+  position: sticky;
+  top: 0;
 }
 .topnav h1 {
   font-size: 7rem;
@@ -215,6 +217,7 @@ body {
 .boxes {
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 .boxes .example {
   width: 200px;
@@ -238,14 +241,14 @@ body {
 }
 .boxes .box-header {
   width: 65%;
-  margin: 25px 0;
-  color: #fcd3ff;
+  margin: 25px 5px;
 }
 .boxes .box-header h2 {
   font-size: 3.5rem;
+  color: #fcd3ff;
 }
 .boxes .box-header p {
   font-size: 1.8rem;
   margin-top: 25px;
-  color: #8d17a5;
+  color: #f2f2f2;
 }
