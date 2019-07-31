@@ -1,3 +1,7 @@
+body{
+  box-shadow: 0 0 20px @pearl;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -8,19 +12,26 @@ header {
 
   h2 {
     font-size: 4rem;
-    color: @main-purple;
+    color: #fcd3ff;
+    margin-left: 15px;
     text-shadow: 3px 3px 3px black;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
   }
 
   a {
     font-size: 2.8rem;
-    margin-right: 1rem;
+    padding: 15px 40px;
+    margin: 10px;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: @pearl;
+    color: #8d17a5;
+    background-color: #f2f2f2;
     box-shadow: 3px 3px 3px black;
-    color: @deep-purple;
-    padding: 0 1.5rem;
 
     &:hover {
       background-color: rgb(59, 59, 59);
