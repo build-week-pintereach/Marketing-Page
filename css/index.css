@@ -290,6 +290,7 @@ body {
   flex-direction: column;
   align-items: left;
   justify-content: center;
+  width: 65%;
 }
 .inline .boxes .box-header h2 {
   font-size: 4.5rem;
