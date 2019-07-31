@@ -1,5 +1,6 @@
 .background {
     background-color: @main-gray;
+    box-shadow: 0 0 20px @pearl;
     height: 2000px;
     width: 100%;
 }
@@ -45,7 +46,7 @@
     .introduction {
         display: flex;
         justify-content: space-between;
-
+        margin: 100px 0;
 
         div {
             .main-text;
@@ -69,12 +70,12 @@
     .boxes {
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
+        align-items: center;
+        margin: 50px 0;
         height: 300px;
     
         .example {
             .box;
-            
         
             p {
                 font-size: 7rem;
@@ -88,28 +89,38 @@
             .main-text;
             
             h2 {
-
                 .header;
+                width: 75%;
             }
     
             p {
                 .paragraph;
+                width: 75%;
             }
         }
     }
 
     .audience {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: left;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0;
 
-        h2 {
-            .header;
+        div {
+
+            h2 {
+                .header;
+            }
+    
+            p {
+                .paragraph;
+                width: 80%;
+            }
         }
 
-        p {
-            .paragraph;
+        img {
+            border-radius: 50%;
+            box-shadow: 0 0 15px black;
         }
     }
 }

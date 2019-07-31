@@ -12,11 +12,11 @@
   transform: rotate(-5deg);
 }
 .header {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: #fcd3ff;
 }
 .paragraph {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-top: 25px;
   color: #f2f2f2;
 }
@@ -161,7 +161,7 @@ html {
 body {
   width: 72%;
   margin: 0 auto;
-  background-color: #f2f2f2;
+  background-color: black;
 }
 .topnav {
   display: flex;
@@ -200,6 +200,7 @@ body {
 }
 .background {
   background-color: #3b3b3b;
+  box-shadow: 0 0 20px #f2f2f2;
   height: 2000px;
   width: 100%;
 }
@@ -236,6 +237,7 @@ body {
 .inline .introduction {
   display: flex;
   justify-content: space-between;
+  margin: 100px 0;
 }
 .inline .introduction div {
   display: flex;
@@ -244,12 +246,12 @@ body {
   justify-content: center;
 }
 .inline .introduction div h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: #fcd3ff;
 }
 .inline .introduction div p {
   width: 75%;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-top: 25px;
   color: #f2f2f2;
 }
@@ -260,7 +262,8 @@ body {
 .inline .boxes {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  align-items: center;
+  margin: 50px 0;
   height: 300px;
 }
 .inline .boxes .example {
@@ -289,26 +292,33 @@ body {
   justify-content: center;
 }
 .inline .boxes .box-header h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   color: #fcd3ff;
+  width: 75%;
 }
 .inline .boxes .box-header p {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   margin-top: 25px;
   color: #f2f2f2;
+  width: 75%;
 }
 .inline .audience {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: left;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0;
 }
-.inline .audience h2 {
-  font-size: 3.5rem;
+.inline .audience div h2 {
+  font-size: 4.5rem;
   color: #fcd3ff;
 }
-.inline .audience p {
-  font-size: 1.8rem;
+.inline .audience div p {
+  font-size: 2.5rem;
   margin-top: 25px;
   color: #f2f2f2;
+  width: 80%;
+}
+.inline .audience img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px black;
 }
