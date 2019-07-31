@@ -169,21 +169,27 @@ img {
   margin: 0 auto;
   background-color: #343434;
 }
+body {
+  box-shadow: 0 0 20px #f2f2f2;
+}
 header {
   display: flex;
   justify-content: space-between;
+  text-align: center;
   align-items: center;
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(black, #d11aff);
-  position: sticky;
-  top: 0;
+  background: linear-gradient(to bottom, black, #d11aff);
+  height: 15rem;
 }
 header h2 {
   font-size: 4rem;
   color: #fcd3ff;
   margin-left: 15px;
   text-shadow: 3px 3px 3px black;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 15px;
 }
 header a {
   font-size: 2.8rem;
@@ -297,7 +303,7 @@ footer p {
   color: #fcd3ff;
 }
 #tim {
-  background-image: url("../images/tim.jpg");
+  background-image: url("../images/Tim.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
