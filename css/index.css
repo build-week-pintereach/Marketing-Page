@@ -15,16 +15,28 @@
   font-size: 4.5rem;
   color: #fcd3ff;
 }
+.mobile-header {
+  font-size: 6rem;
+  color: #fcd3ff;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
 .paragraph {
   font-size: 2.5rem;
   margin-top: 25px;
   color: #f2f2f2;
 }
+.mobile-paragraph {
+  font-size: 3rem;
+  margin-top: 75px;
+  color: #f2f2f2;
+  margin: 0 auto;
+  width: 90%;
+}
 .main-text {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -198,162 +210,6 @@ body {
   background-color: #3b3b3b;
   color: #f2f2f2;
 }
-body {
-  width: 100%;
-}
-body .topnav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(black, #d11aff);
-  position: sticky;
-  top: 0;
-}
-body .topnav h1 {
-  font-size: 7rem;
-  letter-spacing: 0.5rem;
-  color: #fcd3ff;
-  text-shadow: 3px 3px 3px black;
-}
-body .topnav nav {
-  display: flex;
-  justify-content: space-between;
-}
-body .topnav nav a {
-  font-size: 2rem;
-  padding: 15px 40px;
-  margin: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #8d17a5;
-  background-color: #f2f2f2;
-  box-shadow: 3px 3px 3px black;
-}
-body .topnav nav a:hover {
-  background-color: #3b3b3b;
-  color: #f2f2f2;
-}
-body .opener {
-  display: flex;
-  align-content: center;
-  justify-content: space-around;
-  flex-direction: column;
-  text-align: center;
-  background-color: gray;
-  height: 150px;
-  width: 90%;
-  margin: 50px auto;
-  box-shadow: 3px 3px 3px #8d17a5;
-}
-body .opener section h1 {
-  font-size: 6rem;
-  font-family: 'Kanit', sans-serif;
-  color: #f2f2f2;
-  text-shadow: 3px 3px 3px black;
-}
-body .opener section p {
-  font-size: 2rem;
-  color: #fcd3ff;
-}
-body .opener section p a {
-  text-decoration: none;
-  color: #8d17a5;
-}
-body .inline {
-  width: 80%;
-  margin: 0 auto;
-}
-body .inline .introduction {
-  display: flex;
-  justify-content: space-between;
-  margin: 100px 0;
-}
-body .inline .introduction div {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-}
-body .inline .introduction div h2 {
-  font-size: 4.5rem;
-  color: #fcd3ff;
-}
-body .inline .introduction div p {
-  width: 75%;
-  font-size: 2.5rem;
-  margin-top: 25px;
-  color: #f2f2f2;
-}
-body .inline .introduction img {
-  border-radius: 50%;
-  box-shadow: 0 0 15px black;
-}
-body .inline .boxes {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 0;
-  height: 300px;
-}
-body .inline .boxes .example {
-  width: 200px;
-  height: 200px;
-  background: #f2f2f2;
-  border-radius: 30px;
-  box-shadow: 15px 15px 0 #d11aff;
-  transition: 0.5s;
-}
-body .inline .boxes .example:hover {
-  width: 220px;
-  height: 220px;
-  transform: rotate(-5deg);
-}
-body .inline .boxes .example p {
-  font-size: 7rem;
-  text-align: right;
-  padding: 5px;
-  color: #d11aff;
-}
-body .inline .boxes .box-header {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  width: 70%;
-}
-body .inline .boxes .box-header h2 {
-  font-size: 4.5rem;
-  color: #fcd3ff;
-  width: 80%;
-}
-body .inline .boxes .box-header p {
-  font-size: 2.5rem;
-  margin-top: 25px;
-  color: #f2f2f2;
-  width: 80%;
-}
-body .inline .audience {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 100px 0;
-}
-body .inline .audience div h2 {
-  font-size: 4.5rem;
-  color: #fcd3ff;
-}
-body .inline .audience div p {
-  font-size: 2.5rem;
-  margin-top: 25px;
-  color: #f2f2f2;
-  width: 80%;
-}
-body .inline .audience img {
-  border-radius: 50%;
-  box-shadow: 0 0 15px black;
-}
 .background {
   background-color: #3b3b3b;
   box-shadow: 0 0 20px #f2f2f2;
@@ -399,7 +255,6 @@ body .inline .audience img {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
 }
 .inline .introduction div h2 {
   font-size: 4.5rem;
@@ -445,7 +300,6 @@ body .inline .audience img {
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
   width: 70%;
 }
 .inline .boxes .box-header h2 {
@@ -478,4 +332,166 @@ body .inline .audience img {
 .inline .audience img {
   border-radius: 50%;
   box-shadow: 0 0 15px black;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, black, #d11aff);
+  height: 12rem;
+  color: #8d17a5;
+  text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+}
+@media (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+  .background {
+    background-color: black;
+    height: 2100px;
+  }
+  .topnav {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(black, #d11aff);
+    flex-direction: column;
+  }
+  .topnav h1 {
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    color: #fcd3ff;
+    text-shadow: 3px 3px 3px black;
+  }
+  .topnav nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topnav nav a {
+    font-size: 2rem;
+    padding: 15px 40px;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8d17a5;
+    background-color: #f2f2f2;
+    box-shadow: 3px 3px 3px black;
+  }
+  .topnav nav a:hover {
+    background-color: #3b3b3b;
+    color: #f2f2f2;
+  }
+  .opener section h1 {
+    font-size: 6rem;
+  }
+  .inline {
+    width: 100%;
+  }
+  .inline .introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: justified;
+  }
+  .inline .introduction div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px 0;
+    border-bottom: 3px solid #d11aff;
+    box-shadow: 0px 0 20px #8d17a5;
+  }
+  .inline .introduction div h2 {
+    font-size: 6rem;
+    color: #fcd3ff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .inline .introduction div p {
+    font-size: 3rem;
+    margin-top: 75px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .inline .introduction img {
+    display: none;
+  }
+  .inline .boxes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 50px 0;
+    height: 475px;
+    padding: 50px 0;
+    border-bottom: 3px solid #d11aff;
+    box-shadow: 0px 0 20px #8d17a5;
+  }
+  .inline .boxes .example {
+    width: 200px;
+    height: 200px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    box-shadow: 15px 15px 0 #d11aff;
+    transition: 0.5s;
+  }
+  .inline .boxes .example:hover {
+    width: 220px;
+    height: 220px;
+    transform: rotate(-5deg);
+  }
+  .inline .boxes .example p {
+    font-size: 7rem;
+    text-align: right;
+    padding: 5px;
+    color: #d11aff;
+  }
+  .inline .boxes .box-header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+  }
+  .inline .boxes .box-header h2 {
+    font-size: 6rem;
+    color: #fcd3ff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .inline .boxes .box-header p {
+    font-size: 3rem;
+    margin-top: 75px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .inline .audience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+  }
+  .inline .audience div {
+    border-bottom: 3px solid #d11aff;
+    box-shadow: 0px 0 20px #8d17a5;
+    padding: 50px 0;
+  }
+  .inline .audience div h2 {
+    width: 80%;
+    font-size: 6rem;
+    color: #fcd3ff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    font-size: 5.8rem;
+  }
+  .inline .audience div p {
+    font-size: 3rem;
+    margin-top: 75px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .inline .audience img {
+    display: none;
+  }
 }

@@ -1,22 +1,21 @@
-body{
-    width: 100%;
+@media (max-width: 800px) {
 
-    // .background {
-    //     background-color: @main-gray;
-    //     box-shadow: 0 0 20px @pearl;
-    //     height: 2000px;
-    //     width: 100%;
-    // }
+    body{
+        width: 100%;
+    }
+    
+    // *****navigation*****
+
+    .background {
+        background-color: black;
+        height: 2100px;
+    }
 
     .topnav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 100%;
         height: 150px;
         background: linear-gradient(black, @main-purple);
-        position: sticky;
-        top: 0;
+        flex-direction: column;
         
         h1 {
             font-size: 7rem;
@@ -47,74 +46,58 @@ body{
         }
     }
     
+    // *****main-body*****
+
     .opener {
-        display: flex;
-        align-content: center;
-        justify-content: space-around;
-        flex-direction: column;
-        text-align: center;
-        background-color: gray;
-        height: 150px;
-        width: 90%;
-        margin: 50px auto;
-        box-shadow: 3px 3px 3px @deep-purple;
-    
     
         section {
     
             h1 {
                 font-size: 6rem;
-            font-family: @main-font;
-            color: @pearl;
-            text-shadow: 3px 3px 3px black;
-            }
-        
-            p {
-                font-size: 2rem;
-                color: @lightpurple;;
-    
-                a {
-                    text-decoration: none;
-                    color: @deep-purple;
-                }
             }
         }
     }
     
     .inline {
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        // margin: 0 auto;
     
         .introduction {
             display: flex;
-            justify-content: space-between;
-            margin: 100px 0;
+            flex-direction: column;
+            text-align: justified;
     
             div {
                 .main-text;
+                padding: 50px 0;
+                border-bottom: 3px solid @main-purple;
+                box-shadow: 0px 0 20px @deep-purple;
     
                 h2 {
-                    .header;
+                    .mobile-header;
                 }
             
                 p {
-                    width: 75%;
-                    .paragraph;
+                    .mobile-paragraph;
                 }
             }
     
             img {
-                border-radius: 50%;
-                box-shadow: 0 0 15px black;
+                display: none;
             }
         }
         
+        // *****box*****
+
         .boxes {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column-reverse;
             align-items: center;
             margin: 50px 0;
-            height: 300px;
+            height: 475px;
+            padding: 50px 0;
+            border-bottom: 3px solid @main-purple;
+            box-shadow: 0px 0 20px @deep-purple;
         
             .example {
                 .box;
@@ -129,16 +112,14 @@ body{
         
             .box-header {
                 .main-text;
-                width: 70%;
+                width: 100%;
                 
                 h2 {
-                    .header;
-                    width: 80%;
+                    .mobile-header;
                 }
         
                 p {
-                    .paragraph;
-                    width: 80%;
+                    .mobile-paragraph;
                 }
             }
         }
@@ -150,21 +131,25 @@ body{
             margin: 100px 0;
     
             div {
+                border-bottom: 3px solid @main-purple;
+                box-shadow: 0px 0 20px @deep-purple;
+                padding: 50px 0;
     
                 h2 {
-                    .header;
+                    width: 80%;
+                    .mobile-header;
+                    font-size: 5.8rem;
                 }
         
                 p {
-                    .paragraph;
-                    width: 80%;
+                    .mobile-paragraph;
                 }
             }
     
             img {
-                border-radius: 50%;
-                box-shadow: 0 0 15px black;
+                display: none;
             }
         }
     }
 }
+
