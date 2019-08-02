@@ -1,11 +1,18 @@
-// class Object {
-//     constructor(attribute){
-//         this.link = attribute.link;
-//     }
-// };
+let navBar = document.querySelector("nav a");
+let trigram = document.getElementById("trigram");
+let tracker = 1;
 
-// let newObj = new Object ({
-//     link: document.querySelector(".object h1")
-// });
 
-// newObj.link.innerHTML = "String";
+function navButton() {
+    if (tracker === 1) {
+        navBar.classList.add("navbar");
+        navBar.style.display = "flex";
+        trigram.style.display = "none";
+        tracker = 0;
+    }
+    else if (tracker === 0) {
+        navBar.classList.remove("navbar");
+        trigram.style.display = "block";
+        tracker = 1;
+    }
+}

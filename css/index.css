@@ -174,7 +174,6 @@ body {
   width: 72%;
   margin: 0 auto;
   background-color: black;
-  
 }
 .topnav {
   display: flex;
@@ -210,6 +209,9 @@ body {
 .topnav nav a:hover {
   background-color: #3b3b3b;
   color: #f2f2f2;
+}
+.topnav nav a:nth-child(5) {
+  display: none;
 }
 .background {
   background-color: #3b3b3b;
@@ -251,6 +253,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 100px 0;
+  padding: 50px 200px;
+  border-bottom: 3px solid #d11aff;
+  box-shadow: 0 0 20px black;
 }
 .inline .introduction div {
   display: flex;
@@ -319,6 +324,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 100px 0;
+  padding: 50px 200px;
+  border-bottom: 3px solid #d11aff;
+  box-shadow: 0 0 20px black;
 }
 .inline .audience div h2 {
   font-size: 4.5rem;
@@ -343,6 +351,9 @@ footer {
   height: 12rem;
   color: #8d17a5;
   text-shadow: 2px 2px 2px black;
+  font-size: 2.5rem;
+}
+footer p {
   font-size: 2.5rem;
 }
 @media (max-width: 800px) {
@@ -380,6 +391,184 @@ footer {
     box-shadow: 3px 3px 3px black;
   }
   .topnav nav a:hover {
+    background-color: #3b3b3b;
+    color: #f2f2f2;
+  }
+  .topnav nav a:nth-child(5) {
+    display: none;
+  }
+  .opener section h1 {
+    font-size: 6rem;
+  }
+  .inline {
+    width: 100%;
+  }
+  .inline .introduction {
+    display: flex;
+    flex-direction: column;
+    text-align: justified;
+    padding: 0;
+    border-bottom: none;
+    box-shadow: none;
+  }
+  .inline .introduction div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 50px 0;
+    border-bottom: 3px solid #d11aff;
+    box-shadow: 0px 0 20px #8d17a5;
+  }
+  .inline .introduction div h2 {
+    font-size: 6rem;
+    color: #fcd3ff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .inline .introduction div p {
+    font-size: 3rem;
+    margin-top: 75px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .inline .introduction img {
+    display: none;
+  }
+  .inline .boxes {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 50px 0;
+    height: 475px;
+    padding: 50px 0;
+    border-bottom: 3px solid #d11aff;
+    box-shadow: 0px 0 20px #8d17a5;
+  }
+  .inline .boxes .example {
+    width: 200px;
+    height: 200px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    box-shadow: 15px 15px 0 #d11aff;
+    transition: 0.5s;
+  }
+  .inline .boxes .example:hover {
+    width: 220px;
+    height: 220px;
+    transform: rotate(-5deg);
+  }
+  .inline .boxes .example p {
+    font-size: 7rem;
+    text-align: right;
+    padding: 5px;
+    color: #d11aff;
+  }
+  .inline .boxes .box-header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+  }
+  .inline .boxes .box-header h2 {
+    font-size: 6rem;
+    color: #fcd3ff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .inline .boxes .box-header p {
+    font-size: 3rem;
+    margin-top: 75px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .inline .audience {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    padding: 0;
+    border-bottom: none;
+    box-shadow: none;
+  }
+  .inline .audience div {
+    border-bottom: 3px solid #d11aff;
+    box-shadow: 0px 0 20px #8d17a5;
+    padding: 50px 0;
+  }
+  .inline .audience div h2 {
+    width: 80%;
+    font-size: 6rem;
+    color: #fcd3ff;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    font-size: 5.8rem;
+  }
+  .inline .audience div p {
+    font-size: 3rem;
+    margin-top: 75px;
+    color: #f2f2f2;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .inline .audience img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 45%;
+  }
+  body {
+    width: 100%;
+  }
+  .background {
+    background-color: black;
+    height: 2000px;
+  }
+  .topnav {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(black, #d11aff);
+    flex-direction: column;
+  }
+  .topnav h1 {
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    color: #fcd3ff;
+    text-shadow: 3px 3px 3px black;
+  }
+  .topnav nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .topnav nav a {
+    display: none;
+  }
+  .topnav nav #trigram {
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .topnav .navbar {
+    display: block;
+    width: 100%;
+  }
+  .topnav .navbar a {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #8d17a5;
+    background-color: #f2f2f2;
+    box-shadow: 3px 3px 3px black;
+  }
+  .topnav .navbar a:hover {
     background-color: #3b3b3b;
     color: #f2f2f2;
   }
