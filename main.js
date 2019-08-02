@@ -6,6 +6,7 @@ let tracker = 1;
 function navButton() {
     if (tracker === 1) {
         nav.classList.remove("navbar");
+        nav.classList.add("responsive");
         createClass();
         tracker = 0;
     }
