@@ -1,12 +1,11 @@
-let navBar = document.querySelector("nav a");
+let navBar = document.querySelector("nav");
 let trigram = document.getElementById("trigram");
 let tracker = 1;
 
 
 function navButton() {
     if (tracker === 1) {
-        navBar.classList.add("navbar");
-        navBar.style.display = "flex";
+        navBar.style.display = "block";
         trigram.style.display = "none";
         tracker = 0;
     }

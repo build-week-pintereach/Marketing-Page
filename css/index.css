@@ -525,7 +525,7 @@ footer p {
   }
   .background {
     background-color: black;
-    height: 2000px;
+    height: 2100px;
   }
   .topnav {
     width: 100%;
@@ -546,31 +546,15 @@ footer p {
   .topnav nav a {
     display: none;
   }
-  .topnav nav #trigram {
-    display: block;
-    font-size: 3rem;
-    text-align: center;
-    padding: 20px 20px;
-    width: 20px;
-    height: 20px;
-  }
-  .topnav .navbar {
-    display: block;
-    width: 100%;
-  }
-  .topnav .navbar a {
-    font-size: 2rem;
-    margin: 0 auto;
-    width: 100%;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #8d17a5;
-    background-color: #f2f2f2;
-    box-shadow: 3px 3px 3px black;
-  }
-  .topnav .navbar a:hover {
+  .topnav nav a:hover {
     background-color: #3b3b3b;
     color: #f2f2f2;
+  }
+  .topnav nav #trigram {
+    display: block;
+  }
+  .topnav nav .navbar {
+    display: block;
   }
   .opener section h1 {
     font-size: 6rem;
