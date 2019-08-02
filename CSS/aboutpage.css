@@ -169,6 +169,18 @@ img {
   margin: 0 auto;
   background-color: #343434;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    background-color: black;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    background-color: black;
+  }
+}
 body {
   box-shadow: 0 0 20px #f2f2f2;
 }
@@ -179,6 +191,8 @@ header {
   align-items: center;
   background: linear-gradient(to bottom, black, #d11aff);
   height: 15rem;
+  position: sticky;
+  top: 0;
 }
 header h2 {
   font-size: 4rem;
@@ -215,8 +229,7 @@ header a.icon {
     justify-content: center;
   }
   header a {
-    font-size: 1.5rem;
-    padding: 1.5rem 2.5rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -256,8 +269,10 @@ header a.icon {
 }
 @media (max-width: 800px) {
   .aboutbody {
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 75%;
+    margin-left: 10%;
+    flex-flow: row wrap;
+    justify-content: space-around;
   }
 }
 footer {
@@ -356,6 +371,21 @@ footer p {
   padding: 2rem;
   max-height: 50rem;
 }
+@media (max-width: 500px) {
+  .modal-content img {
+    display: none;
+  }
+  .modal-content h2 {
+    display: none;
+  }
+  .modal-content .social img {
+    display: block;
+  }
+  .modal-content p {
+    font-size: 2rem;
+  }
+}
+
 .close {
   color: #aaa;
   float: right;
@@ -416,14 +446,15 @@ textarea {
   display: flex;
   background-color: #d11aff;
   color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  font-weight: bold;
 }
 @media (max-width: 800px) {
   .bttns input {
     font-size: 1rem;
-    font-weight: bold;
-    border: 1px solid #f2f2f2;
   }
 }
+
 .bttns input:last-child {
   margin-left: 1rem;
 }
