@@ -1,17 +1,30 @@
-let navBar = document.querySelector("nav");
-let trigram = document.getElementById("trigram");
+let nav = document.querySelector("nav");
+// let nav = document.querySelector(".navbar");
+// let responsive = document.querySelector(".responsive");
 let tracker = 1;
-
 
 function navButton() {
     if (tracker === 1) {
-        navBar.style.display = "block";
-        trigram.style.display = "none";
+        nav.classList.remove("navbar");
+        createClass();
         tracker = 0;
     }
     else if (tracker === 0) {
-        navBar.classList.remove("navbar");
-        trigram.style.display = "block";
+        nav.classList.remove("responsive");
+        nav.classList.add("navbar");
+        document.querySelector(".exit").remove();
         tracker = 1;
     }
+}
+
+function createClass() {
+    let node = document.createElement("a");
+    let textnode = document.createTextNode("X");
+
+    node.appendChild(textnode);
+    node.style.cursor = "pointer";
+    node.createElement
+    node.setAttribute("class", "exit");
+    node.setAttribute("onclick", "navButton()");
+    nav.appendChild(node);
 }

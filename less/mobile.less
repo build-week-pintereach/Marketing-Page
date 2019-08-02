@@ -1,9 +1,10 @@
-@media (max-width: 500px) {
 
+@media (max-width: 800px) {
+    
     html {
         font-size: 45%;
     }
-
+    
     body{
         width: 100%;
     }
@@ -12,7 +13,7 @@
 
     .background {
         background-color: black;
-        height: 2100px;
+        height: 2000px;
     }
 
     .topnav {
@@ -27,26 +28,43 @@
             color: @lightpurple;
             text-shadow: 3px 3px 3px black;
         }
-    
-        nav {
-            display: flex;
-            justify-content: space-between;
+        
+        .navbar {
+            
             
             a {
                 display: none;
-    
+                
                 &:hover {
                     background-color: rgb(59, 59, 59);
                     color: @pearl;
                 }
             }
-
-            #trigram {
+            
+            a:nth-child(5) {
                 display: block;
+                padding: 15px 15px;
+                font-size: 3rem;
+                cursor: pointer;
             }
+        }
+        
+        .responsive {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 auto;
+            background-color: black;
 
-            .navbar {
-                display: block;
+            a{
+                text-align: center;
+                font-size: 2rem;
+                padding: 15px 40px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color: @deep-purple;
+                background-color: @pearl;
+                box-shadow: 3px 3px 3px black;
             }
         }
     }
@@ -71,6 +89,9 @@
             display: flex;
             flex-direction: column;
             text-align: justified;
+            padding: 0;
+            border-bottom: none;
+            box-shadow: none;
     
             div {
                 .main-text;
@@ -134,6 +155,9 @@
             justify-content: space-between;
             align-items: center;
             margin: 100px 0;
+            padding: 0;
+            border-bottom: none;
+            box-shadow: none;
     
             div {
                 border-bottom: 3px solid @main-purple;
