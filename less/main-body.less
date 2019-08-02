@@ -1,5 +1,6 @@
 .background {
     background-color: @main-gray;
+    box-shadow: 0 0 20px @pearl;
     height: 2000px;
     width: 100%;
 }
@@ -41,11 +42,15 @@
 .inline {
     width: 80%;
     margin: 0 auto;
+    
 
     .introduction {
         display: flex;
         justify-content: space-between;
-
+        margin: 100px 0;
+        padding: 50px 200px;
+        border-bottom: 3px solid @main-purple;
+        box-shadow: 0 0 20px black;
 
         div {
             .main-text;
@@ -69,7 +74,10 @@
     .boxes {
         display: flex;
         justify-content: space-between;
-        margin-top: 100px;
+        align-items: center;
+        margin: 50px 0;
+        height: 300px;
+        
     
         .example {
             .box;
@@ -84,15 +92,44 @@
     
         .box-header {
             .main-text;
+            width: 70%;
             
             h2 {
+                .header;
+                width: 80%;
+            }
+    
+            p {
+                .paragraph;
+                width: 80%;
+            }
+        }
+    }
 
+    .audience {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0;
+        padding: 50px 200px;
+        border-bottom: 3px solid @main-purple;
+        box-shadow: 0 0 20px black;
+
+        div {
+
+            h2 {
                 .header;
             }
     
             p {
                 .paragraph;
+                width: 80%;
             }
+        }
+
+        img {
+            border-radius: 50%;
+            box-shadow: 0 0 15px black;
         }
     }
 }

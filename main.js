@@ -1,11 +1,31 @@
-// class Object {
-//     constructor(attribute){
-//         this.link = attribute.link;
-//     }
-// };
+let nav = document.querySelector("nav");
+// let nav = document.querySelector(".navbar");
+// let responsive = document.querySelector(".responsive");
+let tracker = 1;
 
-// let newObj = new Object ({
-//     link: document.querySelector(".object h1")
-// });
+function navButton() {
+    if (tracker === 1) {
+        nav.classList.remove("navbar");
+        nav.classList.add("responsive");
+        createClass();
+        tracker = 0;
+    }
+    else if (tracker === 0) {
+        nav.classList.remove("responsive");
+        nav.classList.add("navbar");
+        document.querySelector(".exit").remove();
+        tracker = 1;
+    }
+}
 
-// newObj.link.innerHTML = "String";
+function createClass() {
+    let node = document.createElement("a");
+    let textnode = document.createTextNode("X");
+
+    node.appendChild(textnode);
+    node.style.cursor = "pointer";
+    node.createElement
+    node.setAttribute("class", "exit");
+    node.setAttribute("onclick", "navButton()");
+    nav.appendChild(node);
+}
