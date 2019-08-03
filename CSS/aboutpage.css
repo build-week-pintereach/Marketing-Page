@@ -385,7 +385,6 @@ footer p {
     font-size: 2rem;
   }
 }
-
 .close {
   color: #aaa;
   float: right;
@@ -446,15 +445,9 @@ textarea {
   display: flex;
   background-color: #d11aff;
   color: #f2f2f2;
-  border: 1px solid #f2f2f2;
   font-weight: bold;
+  border: 1px solid #f2f2f2;
 }
-@media (max-width: 800px) {
-  .bttns input {
-    font-size: 1rem;
-  }
-}
-
 .bttns input:last-child {
   margin-left: 1rem;
 }
